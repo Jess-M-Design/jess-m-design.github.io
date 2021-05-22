@@ -296,6 +296,11 @@ header.masthead h2 {
   }
 }
 
+.list-inline-item {
+  padding: 3px;
+  margin: 0 !important;
+}
+
 .floating-label-form-group {
   position: relative;
   border-bottom: 1px solid #e9ecef;
