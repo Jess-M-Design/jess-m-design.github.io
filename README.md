@@ -1,8 +1,9 @@
-# Crystal-Collector
+# Jess M Design
 
-- In this game, the player will have to guess the answer, just like in Hangman. However, the player will guess which numbers instead of letters.
+- Welcome to my portfolio
 
-## Here's how the app works:
+## Crystal Collector Game
+### Here's how the app works:
 - There will be four crystals displayed as buttons on the page.
 - The player will be shown a random number at the start of the game.
 - When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
@@ -14,12 +15,9 @@
 
 - When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero. The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
 
-## Technologies Used:
+### Technologies Used:
 - HTML, CSS, Javascript, Modal, Bootstrap
 
-## Live link:
-- link: https://jmarrano09.github.io/Crystal-Collector/public/crystal.html
+### Live link:
+- link: https://jess-m-design.github.io/Crystal-Collector-Game/public/crystal.html
 
-## Additional:
-- Be sure to further check out this game out in The Ultimate Game!
-- Link: https://github.com/jmarrano09/The-Ultimate-Game

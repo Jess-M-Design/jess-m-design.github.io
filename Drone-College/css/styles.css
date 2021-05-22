@@ -1,0 +1,667 @@
+/* Template: Bono - Coming Soon Page Template
+   Author: InovatikThemes
+   Version: 1.0.0
+   Created: Nov 2017
+   Description: Master CSS file
+*/
+
+/****************************************
+    TABLE OF CONTENTS
+
+01. General Styles 
+02. Preloader
+03. Header
+04. Media Queries
+*****************************************/
+
+
+/******************************/
+/*     01. General Styles     */
+/******************************/
+body,
+html {
+    width: 100%;
+    height: 100%; 
+}
+
+body, p {
+	color: #fff;
+	font: 300 1rem/1.75rem "Open Sans", sans-serif;
+}
+
+h1 {
+	font: 700 2.5rem/3rem "Raleway", sans-serif;
+}
+
+h2 {
+	font: 700 2rem/2.25rem "Raleway", sans-serif;
+}
+
+h3 {
+	font: 700 1.75rem/2rem "Raleway", sans-serif;
+}
+
+a, a:hover {
+	color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+li {
+	font-size: 12px;
+}
+
+.button-solid {
+	display: inline-block;
+	height: 3rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	border: 1px solid #f1ae3b;
+	border-radius: 25px;
+	background-color: #f1ae3b;
+	color: #fff;
+	font: 700 1rem/2.75rem "Open Sans", sans-serif;
+	/* transition: all .3s ease; */
+	transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+.button-solid:hover {
+	border: 1px solid #fff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.form-control-input {
+	width: 100%;
+	height: 3rem; /* looks bad in IE if you use padding instead of height*/
+	padding-left: 1.5rem;
+    border: 1px solid #fff;
+	border-radius: 25px;	
+	background-color: #fff;
+	color: #3b454d;
+	font: 300 1rem/1.5rem "Open Sans", sans-serif;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-submit-button {
+	width: 100%;
+	height: 3rem;
+	border: 1px solid #f1ae3b;
+	border-radius: 25px;
+	background-color: #f1ae3b;
+	color: #fff;
+	font: 700 1rem/2rem "Open Sans", sans-serif;
+	cursor: pointer;
+	transition: background-color .3s ease, color .3s ease;
+}
+
+.form-control-submit-button:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
+.form-control-textarea {
+	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	width: 100%;
+	height: 7.3rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	padding-top: 0.8rem;
+	padding-left: 1.5rem;
+	border: 1px solid #ccc; 
+	border-radius: 25px;
+	background-color: #fff;
+	color: #3b454d;
+	font: 300 1rem/1.5rem "Open Sans", sans-serif;
+}
+
+#msgSubmit.h3.text-center.text-error {
+	margin-top: 0.5rem;
+	color: #f1ae3b;
+	font: 300 1.25rem/1.75rem "Open Sans", sans-serif;
+}
+
+#msgSubmit.h3.text-center.text-confirmation {
+	margin-top: 0.5rem;
+	color: #f1ae3b;
+	font: 300 1.25rem/1.75rem "Open Sans", sans-serif;
+}
+
+.help-block.with-errors {
+	margin-top: 1rem;
+	font-size: 0.75rem;
+	line-height: 0rem;
+}
+
+/* FadeIn Animation From Animate.css Used For Morphtext */
+@-webkit-keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+}
+  
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 0.6s;
+	animation: fadeIn 0.6s;
+}
+/* end of fadein animation from animate.css used for morphtext */
+
+/* Fade-move Animation For Magnific Popup Lightbox Form */
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-out;
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/* end of fade-move animation for magnific popup lightbox form */
+
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #29bd67;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.75rem 0 0 -2rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+
+/**********************/
+/*     03. Header     */
+/**********************/
+header {
+	position: relative;
+	text-align: center;
+}
+
+header .logo-and-details-wrapper {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-bottom: 0;
+}
+
+header .logo-img {
+	margin-top: 3rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1rem;
+	/* width: 130px; */
+	height: 50px;
+}
+
+header .logo-txt {
+	display: inline-block;
+	margin-top: 3.5rem;
+	margin-bottom: 1rem;
+	font: 700 3rem/2rem "Raleway", sans-serif;
+	text-decoration: none;
+}
+
+header .contact-details {
+	margin-right: 0.5rem;
+}
+
+header .contact-details .fa {
+	margin-right: 0.5rem;
+	margin-left: 0.75rem;
+	color: #fff;
+}
+
+header .list-inline-item {
+	opacity: 0.8;
+}
+
+header .list-inline-item:hover {
+	opacity: 1;
+}
+
+header .first-half-pane {
+	padding-top: 5rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+	/* background-image: url(../images/drone_girl.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+	background-image: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(75, 75, 75, 0.5), 
+      rgba(75, 75, 75, 0.5)
+    ),
+    /* bottom, image */
+    url(../images/drone2.jpg);
+}
+
+header h1 {
+	margin-bottom: 0.75rem;
+}
+
+header .p-under-header {
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+header .countdown {
+	margin-top: 0rem;
+	margin-bottom: 0.5rem;
+	color: #fff;
+	text-align: center;
+}
+
+header .countdown #clock .counter-number {
+	display: inline-block;
+	width: 4.3rem;
+	height: 4.3rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	margin-bottom: 1.25rem;
+	padding-top: 20px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	font: 600 1.5rem/13px "Open Sans", sans-serif;
+	text-align: center;
+	/* background-color: #3b454d7c */
+}
+
+header .countdown #clock .separator {
+	margin-top: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	display: inline-block;
+	height: 2rem;
+	vertical-align: top;
+}
+
+header .countdown #clock .timer-text {
+	font: 300 0.75rem/1rem "Open Sans", sans-serif;
+	text-align: center;
+}
+
+header .second-half-pane {
+	padding-top: 4rem;
+	padding-right: 1rem;
+	padding-bottom: 7rem;
+	padding-left: 1rem;
+	background-color: #343f4b;
+	text-align: left;
+	overflow: auto;
+}
+
+header .accordion {
+	max-width: 35rem;
+	margin-top: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header .accordion .item {
+	margin-bottom: 1rem;
+}
+
+header .accordion a[aria-expanded="true"] .circle-numbering {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-right: 0.8rem;
+	border: 1px solid #f1ae3b;
+	border-radius: 50%;
+	background-color: #f1ae3b;
+	color: #fff;
+	font: 300 1rem/38px "Open Sans", sans-serif;
+	text-align: center;
+	vertical-align: top;
+}
+
+header .accordion a[aria-expanded="false"] .circle-numbering {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-right: 0.8rem;
+	border: 1px solid #f1ae3b;
+	border-radius: 50%;
+	background-color: transparent;
+	color: #fff;
+	font: 300 1rem/38px "Open Sans", sans-serif;
+	text-align: center;
+	vertical-align: top;
+}
+
+header .accordion .accordion-title {
+	display: inline-block;
+	width: 70%;
+	margin-top: 0.25rem;
+	font: 300 1.25rem/2rem "Raleway", sans-serif;
+}
+
+header .accordion .accordion-body {
+	margin-left: 4.3rem;
+}
+
+/* Social Links */
+header .social-links-container {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 1.5rem;
+	text-align: center;
+}
+
+header .social-links-container .fa-stack {
+	margin-right: 0;
+}
+
+header .social-links-container .fa-stack.fa-lg {
+	font-size: 1.5rem;
+}
+
+header .social-links-container .fa-stack a .fa-stack-1x {
+	color: #fff;
+	opacity: 0.8;
+	transition: opacity .3s ease;
+}
+
+header .social-links-container .fa-stack a .fa-stack-2x {
+	color: #2b3540;
+	transition: opacity .3s ease;
+}
+
+header .social-links-container .fa-stack a:hover .fa-stack-2x {
+	color: #3f4b59;
+}
+/* end of social links */
+
+/* Magnific Popup Lightbox Form Content */
+.lightbox-form-container {
+	position: relative;
+	max-width: 32rem;
+	margin: 2.5rem auto;
+	padding: 1.5rem 2rem 2rem 2rem;
+	background-color: #2c2a2f;
+	color: #fff;
+	text-align: left;
+}
+
+.lightbox-form-container button.mfp-close.x-button {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	color: #fff;
+	line-height: 0;
+}
+
+.lightbox-form-container p {
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.lightbox-form-container form {
+	margin-top: 1.25rem;
+}
+
+.lightbox-form-container form p {
+	margin-bottom: 0.5rem;
+}
+
+.lightbox-form-container .form-group {
+	margin-bottom: 1.5rem;
+}
+
+.lightbox-form-container [class~='form-group']:last-of-type  {
+    margin-bottom: 0;
+}
+/* end of magnific popup lightbox form content */
+
+
+/*****************************/
+/*     04. Media Queries     */
+/*****************************/	
+/* Min-width width 768px */
+@media (min-width: 768px)	{
+	h1 {
+		font: 700 2.75rem/3.5rem "Raleway", sans-serif;
+	}
+
+	header .logo-img {
+		float: left;
+		margin-top: 1.75rem;
+		margin-left: 2rem;
+	}
+
+	header .logo-txt {
+		float: left;
+		margin-top: 2.25rem;
+		margin-left: 2rem;
+	}
+
+	header .contact-details {
+		float: right;
+		margin-top: 2.5rem;
+		margin-right: 2rem;
+	}
+
+	header .first-half-pane {
+		padding-top: 10rem;
+	}
+
+	header .p-under-header {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	h1 {
+		font: 700 3.25rem/3.75rem "Raleway", sans-serif;
+	}
+
+	body {
+		overflow: scroll;
+	}
+
+	header {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		text-align: left;
+	}
+	
+	header .first-half-pane {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		height: 100vh;
+		padding-top: 4rem;	
+		padding-bottom: 4rem;	
+	}
+
+	header .countdown {
+		margin-bottom: 1.5rem;
+		text-align: left;
+	}
+
+	header .countdown #clock .counter-number {
+		margin-right: 0.75rem;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	header .countdown #clock span.counter-number:last-of-type {
+		margin-right: 0;
+	}
+
+	header .p-under-header {
+		width: 100%;
+	}
+	
+	header .second-half-pane {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		padding-top: 12rem;
+		padding-bottom: 4rem;
+		/* overflow: scroll; */
+		height: 100vh;	
+	}
+
+	header .second-half-pane-content {
+		width: 26rem;
+		margin-left: 2rem;
+		/* height: 900px; */
+	}
+
+	/* .show {
+		display: none;
+	} */
+
+	/* .collapsing {
+		transition: none;
+	  } */
+
+	header .accordion div.item:last-of-type {
+		margin-bottom: 0.5rem;
+	}
+
+	header .accordion .accordion-title {
+		width: 85%;
+	}
+
+	/* header .first-half-pane-content {
+		width: 100%;
+		max-width: 26.5rem;
+		margin-right: 1.5rem;
+		margin-left: auto;
+	} */
+}
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	header .first-half-pane-content {
+		max-width: 31rem;
+		margin-right: 3rem;
+		margin-left: auto;
+	}
+
+	header .second-half-pane-content {
+		width: 32rem;
+		margin-left: 3rem;
+	}
+}
+
+@media (max-width: 600px) {
+	header .accordion .accordion-title {
+		display: inline-block;
+		width: 70%;
+		margin-top: 0.25rem;
+		font: 300 1rem/2rem "Raleway", sans-serif;
+	}
+  }
