@@ -134,6 +134,36 @@ li {
 	font-size: 0.75rem;
 	line-height: 0rem;
 }
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+	color: black;
+	font-weight: 800;
+  }
+
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+	color: black;
+  }
+
+  .modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+  }
+
+.modal.fade.top:not(.show) .modal-dialog {
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0); }
+  .modal.fade.left:not(.show) .modal-dialog {
+    -webkit-transform: translate3d(-25%, 0, 0);
+    transform: translate3d(-25%, 0, 0); }
+  .modal.fade.right:not(.show) .modal-dialog {
+    -webkit-transform: translate3d(25%, 0, 0);
+    transform: translate3d(25%, 0, 0); }
+  .modal.fade.bottom:not(.show) .modal-dialog {
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0); }
 
 /* FadeIn Animation From Animate.css Used For Morphtext */
 @-webkit-keyframes fadeIn {
