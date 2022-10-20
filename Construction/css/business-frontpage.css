@@ -58,7 +58,7 @@ footer {
 
 
 .stonework-bg {
-  background-image: url(/assets/img/work/horizontal/stonework/stonework3.jpg);
+  background-image: url(../assets/img/work/horizontal/stonework/stonework3.jpg);
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -90,11 +90,11 @@ footer {
 }
 
 .home-bg {
-  background-image: url(/assets/img/work/horizontal/stonework/hor_firepit_path_stone.jpg);
-  background-size: cover;
+background-image: url(../assets/img/work/original/IMG_0020.JPG);  
+background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
-  background-color: #000;
+  /* background-color: #000; */
   /* padding: 24px 0px; */
   padding: 10px 0px;
   position: relative;
@@ -102,11 +102,16 @@ footer {
   width: 100%;
   margin-bottom: 45px;
   height: 300px;
+  /* font-weight: 700;
+  font-size: large; */
 
 }
 
+
+
+
 .about-bg {
-  background-image: url(/assets/img/work/horizontal/stonework/stonework_thinpath3.jpg);
+  background-image: url(../assets/img/work/horizontal/stonework/stonework_thinpath3.jpg);
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -122,7 +127,7 @@ footer {
 }
 
 .construction-bg {
-  background-image: url(/assets/img/work/vertical/construction/ver_deck_wood_construction2.jpg);
+  background-image: url(../assets/img/work/vertical/construction/ver_deck_wood_construction2.jpg);
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -138,7 +143,7 @@ footer {
 }
 
 .remodeling-bg {
-  background-image: url(/assets/img/work/horizontal/remodeling/D.remodeling_wood.jpg);
+  background-image: url(../assets/img/work/horizontal/remodeling/D.remodeling_wood.jpg);
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
