@@ -18,3 +18,5 @@
 ## Goodman Construction Works
 - Link: https://jess-m-design.github.io/Construction/index.html
 
+## UGA Bass Symposium
+- Link: https://jess-m-design.github.io/bass_symposium/index.html
