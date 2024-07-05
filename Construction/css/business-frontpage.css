@@ -28,12 +28,42 @@ body {
   background-color: #282592;
 }
 
+/* ANIMATIONS ANIMATIONS ANIMATIONS ANIMATIONS ANIMATIONS*/
+
+.fadeInAnimation {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.fadeInAnimation.visible {
+  opacity: 1;
+}
+
+.subtitle {
+  opacity: 0;
+  transition: opacity 1s 1.3s; /* delay */
+}
+.subtitle.visible {
+  opacity: 1;
+}
+
+#mainTitle {
+  font-weight: 500;
+}
+
+#subTitle {
+  font-weight: 400;
+}
+
+/* animations */
+
 footer {
   background-color: #282592;
 }
 
 .footer-copyright a:hover {
   text-decoration: none;
+  color: rgb(228, 140, 32);
+
 }
 
 .links li a {
@@ -69,7 +99,7 @@ footer {
   text-align: left;
   width: 100%;
   margin-bottom: 45px;
-  height: 300px;
+  height: 500px;
 
 }
 
@@ -77,7 +107,7 @@ footer {
   background-color: rgb(228, 140, 32);
     position: absolute;
     width: 100%;
-    top: 356px;
+    top: 512px;
     /* background-color: #6064e8; */
 }
 
@@ -101,7 +131,7 @@ background-size: cover;
   text-align: left;
   width: 100%;
   margin-bottom: 45px;
-  height: 300px;
+  height: 500px;
   /* font-weight: 700;
   font-size: large; */
 
@@ -122,7 +152,7 @@ background-size: cover;
   text-align: left;
   width: 100%;
   margin-bottom: 45px;
-  height: 300px;
+  height: 500px;
 
 }
 
@@ -138,7 +168,7 @@ background-size: cover;
   text-align: left;
   width: 100%;
   margin-bottom: 45px;
-  height: 300px;
+  height: 500px;
 
 }
 
@@ -154,7 +184,7 @@ background-size: cover;
   text-align: left;
   width: 100%;
   margin-bottom: 45px;
-  height: 300px;
+  height: 500px;
 
 }
 
