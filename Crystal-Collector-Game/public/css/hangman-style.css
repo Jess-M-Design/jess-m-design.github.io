@@ -22,16 +22,33 @@
     width: 960px;
     background-repeat: no-repeat;
     /* filter: drop-shadow(1px 5px 24px #0000008f); */
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #212121;
+    border: solid 10px #555;
+    box-shadow: 0px 0px 20px #999;
     border-radius: 5px;
- 
-    float: none;
-    /* Positioning */
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 30px;
   }
+
+  /* .something {
+    background-image: url(../images/pixelated_bg1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #212121;
+    border: solid 10px #555;
+    box-shadow: 0px 0px 20px #999;
+    border-radius: 5px;
+    max-width: 960px;
+    height: 600px;
+    margin: 30px auto 50px auto;
+    padding: 2rem;
+  } */
   
   .hm-item {
     background-color: white;

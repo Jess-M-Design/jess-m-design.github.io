@@ -15,11 +15,6 @@ h3 {
 
 .bgTest {
     background-image: url(../images/pixelated_bg1.gif);
-    /* background-image: url(../images/dust_scratches.png); */
-    height: 600px;
-    width: 960px;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,12 +26,10 @@ h3 {
     height: 600px;
     margin: 30px auto 50px auto;
     padding: 2rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 30px;
     
 }
+
+
 
 .answers {
     top: 60%;
