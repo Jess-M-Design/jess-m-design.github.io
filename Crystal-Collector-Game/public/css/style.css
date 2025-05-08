@@ -103,7 +103,18 @@ a:active  {
 
 /**************************** characters ****************************/
 
+/* .row {
+  margin: 8px -16px;
+} */
 
+/* Add padding BETWEEN each column (if you want) */
+/* .row,
+.row > .column {
+  padding: 8px;
+} */
+
+/* Create 3 equal columns that floats next to each other */
+/* 25% for 4 */
 .column {
   float: left;
   width: 33.33%;

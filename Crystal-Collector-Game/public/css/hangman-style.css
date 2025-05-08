@@ -1,0 +1,157 @@
+/* ============================  HANGMAN GAME  ========================== */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    width: 300px;
+      padding: 10px;
+    margin-left: 34.375%; */
+  }
+  
+  .bgTest {
+    background-image: url(../images/pixelated_bg5.gif);
+  
+    height: 600px;
+    width: 960px;
+    background-repeat: no-repeat;
+    /* filter: drop-shadow(1px 5px 24px #0000008f); */
+
+    border-radius: 5px;
+ 
+    float: none;
+    /* Positioning */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  
+  .hm-item {
+    background-color: white;
+    padding: 10px;
+  
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .hm-item div {
+    background-color: white;
+    display: inline-flex;
+    border-radius: 20px;
+    width: 20px;
+    margin: auto;
+    /* display: inline-block;
+    position: relative; */
+  }
+  
+  
+  #user-text {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 20px;
+    margin-left: -461px;
+    margin-top: -114px;
+    box-shadow: black, 2px;
+    font-size: 14px;
+  }
+  
+  #Hangman {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: -189px;
+    margin-top: 289px;
+    font-size: 20px;
+    width: 400px;
+  }
+  
+  #Winner {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 35px;
+  }
+  
+  #generatePick {
+    margin-top: 345px;
+    position: absolute;
+    margin-left: -300px;
+  
+  }
+  
+  #startHangmanOver {
+    margin-top: 345px;
+    position: absolute;
+    margin-left: 60px;
+  }
+  
+  #messagePick {
+    position: absolute;
+    left: 730px;
+  
+    top: 300px;
+  
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    width: 200px;
+    font-size: 1rem;
+    color: #333;
+    margin: 3rem auto;
+  
+  }
+  
+  #messagePick::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: #fff;
+   
+  }
+  
+  #messagePick::before {
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: #333;
+  
+  }
+  
+  #badGuess {
+    position: absolute;
+    margin-left: -461px;
+    margin-top: -65px;
+  }
+  
+  #remainingGuesses {
+    position: absolute;
+    margin-left: -461px;
+    margin-top: -15px;
+  
+  }
+  
+  
+  
