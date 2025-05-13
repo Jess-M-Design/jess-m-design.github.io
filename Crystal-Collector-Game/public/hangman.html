@@ -13,7 +13,7 @@
     <link href="css/hangman-style.css" rel="stylesheet">
 
     <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 
@@ -53,12 +53,14 @@
             <p class="lead">This is a simple game of Hangman. You've played Hangman before, right?
                 Well, in this game, the player
                 chooses letters to
-                guess the hidden word. To play, click on the "Click to generation Hangman Choice" button, and then,
-                simply
-                type a letter from your keyboard. Good Luck!</p>
+                guess the hidden word. Simply click a letter or type on your keyboard to start. If you have already used a letter, 
+                it won't be repeated so don't worry about miss clicking the same letter twice, but if you click the wrong letter, you will lose a life.
+                Good Luck!</p>
 
         </div>
     </div>
+
+    
 
 
 
@@ -93,7 +95,7 @@
 
                     
                 
-                    <button id="restartBtn" style="display:none; margin-top: 5px;">Restart</button>
+                    <!-- <button id="restartBtn" style="display:none; margin-top: 5px;">Restart</button> -->
                     <!-- <div id="messagePick"> </div> -->
 
              
@@ -109,32 +111,7 @@
     </div>
 
 
-
-
-
-
-
-
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="game-modal" role="dialog">
-    <div class="modal-dialog">
-
-     
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-                <div class="modal-text"></div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" id="continue" class="btn btn-default" data-dismiss="modal">Continue</button>
-            </div>
-        </div>
-
-    </div>
-</div> -->
+  
 
 
     <!-- Footer -->
@@ -143,16 +120,26 @@
             <span>&copy; Jess M. Design 2025</span>
             <div class="my-3">
                 <a href="#" class="text-white me-3"><i class="fa-brands fa-github fa-xl"></i></a>
-                <a href="#" class="text-white me-3"><i class="fa-brands fa-dribbble fa-xl"></i></a>
+                <a href="https://dribbble.com/J_M_Design" class="text-white me-3"><i class="fa-brands fa-dribbble fa-xl"></i></a>
                 <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram fa-xl"></i></a>
                 <a href="#" class="text-white me-3"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                 <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                <a href="#" class="text-white"><i class="fa-brands fa-behance fa-xl"></i></a>
+                <a href="https://www.behance.net/jess_m_design" class="text-white"><i class="fa-brands fa-behance fa-xl"></i></a>
             </div>
         </div>
     </footer>
 
-
+<!-- Modal -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p id="modalMessage"></p>
+      <button id="modalRestartBtn">Restart</button>
+      <button id="modalNextBtn"><a href="fight.html">Next Game</a>
+      </button>
+    </div>
+  </div>
+  
 
     <!-- Bootstrap JS Bundle CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -160,4 +147,6 @@
 
 
     <script src="js/hangman-game.js"></script>
+
+      
 </body>
