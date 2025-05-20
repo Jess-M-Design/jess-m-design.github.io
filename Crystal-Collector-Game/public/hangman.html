@@ -4,6 +4,8 @@
     <title>Hangman</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-hangman.ico">
+
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -110,6 +112,24 @@
         </div>
     </div>
 
+     <!-- Modal -->
+     <div class="modal fade" id="game-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Add this class -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Game Results</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-text">
+              <!-- Results text will go here -->
+            </div>
+            <div class="modal-footer">
+              <button id="continue" class="btn btn-primary">Play Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
   
 
@@ -119,7 +139,7 @@
         <div class="container py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
             <span>&copy; Jess M. Design 2025</span>
             <div class="my-3">
-                <a href="#" class="text-white me-3"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href="https://github.com/Jess-M-Design" class="text-white me-3"><i class="fa-brands fa-github fa-xl"></i></a>
                 <a href="https://dribbble.com/J_M_Design" class="text-white me-3"><i class="fa-brands fa-dribbble fa-xl"></i></a>
                 <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram fa-xl"></i></a>
                 <a href="#" class="text-white me-3"><i class="fa-brands fa-linkedin fa-xl"></i></a>

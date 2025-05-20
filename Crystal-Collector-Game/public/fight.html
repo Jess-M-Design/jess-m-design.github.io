@@ -5,6 +5,8 @@
     <title>Boss Fight</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-boss.ico">
+
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -52,12 +54,12 @@
 
 
 
-    <div class="container justify-content-center align-items-center">
-        <div class="row center">
-            <div class="bossBG">
+    <div class="container justify-content-center align-items-center ">
+        <div class="row center ">
+            <div class="bossBG ">
 
 
-                <div class="row g-4">
+                <div class="row g-4 ">
                     <div class=" col-6">
 
                         <div class="player-card">
@@ -78,7 +80,7 @@
                     <div class="col-6">
 
                         <div class="player-card">
-                            <h2>Evil Wizard</h2>
+                            <h2>Evil Villian</h2>
 
                         </div>
 
@@ -92,8 +94,8 @@
                     </div>
 
                 </div>
-
-                <div class="row justify-content-center align-items-center full-height">
+<br>
+                <!-- <div class="row justify-content-center align-items-center full-height">
 
                     <div class="col-sm-3">
 
@@ -113,9 +115,20 @@
 
 
 
+                </div> -->
+
+                <div class="row justify-content-center align-items-center full-height">
+                    <div id="turn-indicator">🟢 Your Turn!</div>
+
+                    <button id="attack">Attack <img class="ability" src="images/sword.png" alt="attack"></button>
+                    <button id="potion">Potion <img class="ability" src="images/potion.png" alt="potion">
+                    </button>
+
+                    <button id="special">Special <img class="ability" src="images/special.png" alt="magic"></button>
+
+                
+
                 </div>
-
-
 
 
             </div>
@@ -124,8 +137,17 @@
     </div>
 
 
+    <br><br><br><br>
 
-
+    <div id="resultModal" class="modal" style="display: block;">
+        <div class="modal-content">
+            <span id="closeModal" class="close">×</span>
+            <p id="modalMessage">You win!</p>
+            <button id="modalRestartBtn">Restart</button>
+            <button id="modalNextBtn"><a href="index.html">Home</a>
+            </button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-white text-center text-lg-start p-3">
