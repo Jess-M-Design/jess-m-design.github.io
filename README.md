@@ -2,6 +2,9 @@
 
 - Welcome to my portfolio
 
+## Mini Game Central:
+- Link: https://Jess-M-Design.github.io/Mini-Game-Central/public/index.html
+
 ## Frontend Developer:
 - Link: https://Jess-M-Design.github.io/Frontend-Developer/index.html
 
