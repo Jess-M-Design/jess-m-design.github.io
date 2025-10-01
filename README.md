@@ -2,11 +2,11 @@
 
 - Welcome to my portfolio
 
+## Main Portfolio:
+- Link: https://Jess-M-Design.github.io/Portfolio/index.html
+
 ## Mini Game Central:
 - Link: https://Jess-M-Design.github.io/Mini-Game-Central/public/index.html
-
-## Frontend Developer:
-- Link: https://Jess-M-Design.github.io/Frontend-Developer/index.html
 
 ## Come Fly with Jess:
 - Aerialist: An (acrobat) who performs feats in the air on a pole, (aerial) hoop, (silks) or trapeze. See also:badass.
